@@ -1,0 +1,123 @@
+/* color 1: #1822dd */
+/* color2: #eeeeee */
+
+body {
+  background: #4682b4;
+}
+
+.main {
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  height: 400px;
+  width: 300px;
+}
+
+.texts {
+  position: relative;
+  user-select: none;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  animation: flicker 3s infinite alternate;
+  font-family: Arial, Georgia, sans-serif;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #fff, 0 0 15px blue,
+      0 0 30px blue, 0 0 40px blue, 0 0 70px blue, 0 0 100px blue;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 11px blue,
+      0 0 20px blue, 0 0 30px blue, 0 0 55px blue, 0 0 80px blue;
+  }
+}
+
+.middle {
+  position: absolute;
+  top: 300px;
+  left: 93px;
+}
+
+.block {
+  display: flex;
+}
+
+.block a:nth-child(1) {
+  position: absolute;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: #1822dd;
+  top: 40%;
+  left: 47%;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.txt {
+  display: grid;
+  position: absolute;
+  margin-top: 2px;
+  color: #eeeeee;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: Arial, Georgia, sans-serif;
+  font-weight: 550;
+  vertical-align: sub;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.35s;
+  user-select: none;
+}
+
+.block a:nth-child(1):hover {
+  color: #1822dd;
+  background-color: transparent;
+  border: 1.5px solid #1822dd;
+}
+
+.block2 a:nth-child(1) {
+  position: absolute;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: red;
+  top: 40%;
+  left: 47%;
+  cursor: pointer;
+  margin-left: 68px;
+}
+
+.txt2 {
+  display: grid;
+  position: absolute;
+  margin-top: 2px;
+  color: #eeeeee;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: Arial, Georgia, sans-serif;
+  font-weight: 550;
+  vertical-align: sub;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.35s;
+  user-select: none;
+}
+
+.block2 a:nth-child(1):hover {
+  color: red;
+  background-color: transparent;
+  border: 1.5px solid red;
+}
