@@ -3,98 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebApp</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        background: var(--tg-theme-bg-color);
-        overflow-x:hidden;
-        overflow-y:hidden;
-      }
-
-      .main {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 22%;
-        height: 63%;
-        text-align: center;
-        border-radius: 10px;
-        padding: 5px;
-        padding-top: 8px;
-        background-color: var(--tg-theme-secondary-bg-color);
-        box-shadow: 7px 7px 5px var(--tg-theme-button-color);
-        min-width: 250px;
-        min-height: 240px;
-      }
-
-      .main h1 {
-        font-size: 25px;
-        font-family: Bradley Hand, cursive;
-        color: var(--tg-theme-text-color);
-        user-select: none;
-      }
-
-      .p1 {
-        padding-top: 10px;
-        font-size: 17px;
-        padding-left: 5px;
-        padding-right: 5px;
-        font-weight: bold;
-        font-family: Bradley Hand, cursive;
-        color: var(--tg-theme-hint-color);
-        user-select: none;
-      }
-
-      .picture {
-        height: 80px;
-        width: 90px;
-        padding-top: 5px;
-        padding-bottom: -10px;
-        user-select: none;
-      }
-
-      .main .but {
-        border-radius: 8px;
-        border: 2px solid #fff;
-        width: 100px;
-        height: 30px;
-        position: absolute;
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: transparent;
-        color: var(--tg-theme-text-color);
-        font-weight: bold;
-        margin-top: 20px;
-        font-size: 20px;
-        font-family: Bradley Hand, cursive;
-        user-select: none;
-        transition: 0.6s;
-      }
-
-      .main .but:hover {
-        color: var(--tg-theme-text-color);
-        background: var(--tg-theme-button-color);
-      }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <div class="main">
-      <h1>Онлайн магазин</h1>
-      <img class="picture" src="pizza.png" alt="PIZZA" />
-      <p class="p1">
-        Пицца это очень вкусное итальянское блюдо. Она пользуется любовью у
-        детей и взрослых !
-      </p>
-      <div class="but">Pizza</div>
+    <div class="block">
+      <h1>Main Page</h1>
+      <p>Наш сайт очень крутой и т.д</p>
+      <ul>
+        <li>Red: <span class="sp1">0</span></li>
+        <li>Orange: <span class="sp2">0</span></li>
+        <li>Yellow: <span class="sp3">0</span></li>
+      </ul>
+      <button class="btn">Color</button>
+      <script src="index.js"></script>
     </div>
   </body>
 </html>
