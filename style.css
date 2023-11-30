@@ -18,8 +18,8 @@ body {
   width: 22%;
   height: 63%;
   text-align: center;
+  border-radius: 8px;
   padding: 5px;
-  padding-top: 8px;
   top: 20%;
   left: 40%;
   border: 2px solid #fff;
