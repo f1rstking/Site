@@ -1,74 +1,84 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
 }
 
 body {
-  background: var(--tg-theme-bg-color);
+  background-color: #111;
 }
 
-.main {
-  border: 3px solid black;
+.block {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 22%;
-  height: 63%;
-  text-align: center;
-  border-radius: 10px;
-  padding: 5px;
-  padding-top: 8px;
-  background-color: var(--tg-theme-secondary-bg-color);
-  box-shadow: 7px 7px 5px #333;
-}
-
-.main h1 {
-  font-size: 25px;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  color: var(--tg-theme-text-color);
-  user-select: none;
-}
-
-.p1 {
-  padding-top: 10px;
-  font-size: 17px;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-weight: bold;
-  font-family: Bradley Hand, cursive;
-  color: var(--tg-theme-hint-color);
-  user-select: none;
-}
-
-.picture {
-  height: 80px;
-  width: 90px;
-  padding-top: 5px;
-  padding-bottom: -10px;
-  user-select: none;
-}
-
-.main .but {
-  border-radius: 8px;
+  background: black;
+  border-radius: 12px;
+  height: 300px;
+  padding: 10px;
+  top: 20%;
+  left: 40%;
   border: 2px solid #fff;
-  width: 110px;
-  height: 40px;
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-  color: var(--tg-theme-text-color);
-  font-weight: bold;
-  font-size: 20px;
-  font-family: Bradley Hand, cursive;
-  user-select: none;
-  transition: 0.6s;
+  box-shadow: 5px 3px 3px #fff;
 }
 
-.main .but:hover {
-  color: var(--tg-theme-text-color);
-  background: var(--tg-theme-button-color);
+ul {
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.color_yellow {
+  background-color: yellow;
+  user-select: none;
+}
+
+.color_red {
+  background-color: red;
+  user-select: none;
+}
+
+.color_orange {
+  background-color: orange;
+  user-select: none;
+}
+
+button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: bold;
+  width: 80px;
+  height: 30px;
+  border-radius: 7px;
+  position: absolute;
+  left: 90px;
+  top: 250px;
+  transition: 0.4s;
+  cursor: default;
+}
+
+button:hover {
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+}
+
+.sp1 {
+  color: red;
+}
+
+.sp2 {
+  color: orange;
+}
+
+.sp3 {
+  color: yellow;
 }
